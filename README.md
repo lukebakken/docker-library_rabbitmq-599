@@ -8,10 +8,17 @@ https://github.com/docker-library/rabbitmq/discussions/599
 make up
 ```
 
-## Run command
+## Run command to test issue
+
+Both of these work successfully:
 
 ```
 docker compose exec rabbitmq1 rabbitmqctl status
+```
+
+```
+docker compose exec rabbitmq1 /bin/bash
+rabbitmqctl status
 ```
 
 ## Versions
